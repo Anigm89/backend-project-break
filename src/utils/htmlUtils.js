@@ -114,7 +114,7 @@ function getProductCardsById(product, sessionActive){
     let addCar = '';
     let edit = '';
     let borrar = '';
-    let link = '/';
+    let link = '/products';
     let select = `
     <select id="tallas-select">
       <option value="XS">XS</option>
