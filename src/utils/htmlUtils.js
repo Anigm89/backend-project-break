@@ -320,7 +320,7 @@ function footer(){
   const html = `
     <footer>
       <p>Proyecto de back-end diseñado y desarrollado por Ani González Moreno 
-        <a href="https://github.com/Anigm89/backend-project-break">
+        <a href="https://github.com/Anigm89/backend-project-break" target="_blank">
           <img src="/images/github.png" alt="icono gitHub">
         </a>
       </p>
