@@ -11,8 +11,8 @@ En este proyecto de back-End he creado una tienda de ropa con un catálogo de pr
 │   │   └── firebase.js
 │   ├── controllers
 │   │   ├── productController.js  
-│   │   └── authController.js --> 
-|   |   |__ docProductController.js 
+│   │   └── authController.js 
+│   │   └── docProductController.js  
 |   |__ docs
 |   |   |__ basicInfo.js
 |   |   |__ components.js
