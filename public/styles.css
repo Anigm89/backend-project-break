@@ -1,0 +1,374 @@
+a{
+    text-decoration: none;
+    color: darkcyan;
+    cursor: pointer;
+}
+ul{padding: 0;}
+li{
+    list-style: none;
+}
+body{margin: 0; padding: 0;}
+
+button{
+    font-family: 'patrick hand';
+    background: darkcyan;
+    border: 1px solid darkcyan;
+    border-radius: 7px;
+    color: #fff;
+    padding: 5px 13px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid darkcyan;
+    border-top: 2px solid darkcyan;
+
+}
+.menu li a{color: darkcyan;}
+.menu li a:hover{font-weight: bold;}
+
+.container{
+    width: 90vw;
+    min-height: 78.1vh;
+    margin: 2vw 5vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .activo{min-height: 68.6vh;}
+.product-card{
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 15.8vw;
+    height: 365px;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #fff;
+
+}
+.product-card:hover{    border: 1px solid darkcyan;}
+.product-card a img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+.precio{margin: 0; font-size: 20px; color: cadetblue;}
+.product-card h2{
+    margin: 5px;
+    font-size: 1.55vw;
+}
+
+.product-cardId{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 71vw;
+    height: 70vh;
+    margin: 3vw 14vw;
+  /*  background-color: aliceblue;*/
+}
+.product-cardId img{
+    height: 80vh;
+}
+.detalles{  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 40%;
+}
+.detalles h2{
+    font-size: 2.3vw;
+    margin-bottom: 0;
+}
+.detalles .descripcion{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 80%;
+}
+.detalles .precio{font-size: 27px;}
+.Seltallas{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.detalles select{    
+    width: 50px;
+    margin-left: 10px;
+}
+
+.detalles a{
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.Divlogin{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    width: 26%;
+    margin: 5% 36%;
+    padding: 10px 15px;
+    box-shadow:1px 2px 7px;
+    font-family: "Poppins", sans-serif;
+
+}
+.Divlogin input{
+    border-radius: 5px;
+    border-color: darkcyan;
+    height: 22px;
+    margin-bottom: 10px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+input[type="radio"]{display: none;}
+
+input[type="radio"] + label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 4px 4px 0 0;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+input[type="radio"]:checked + label:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid darkcyan;
+    float: left;
+    margin-left: -20px;
+    margin-top: 7.2px;
+    border-radius: 100%;
+}
+.newUser{border: 2px solid cadetblue!important;}
+.error, .newUser{
+    width: 40%;
+    margin: 5% 30%;
+    border: 2px solid red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+
+}
+.error a, .newUser a{font-family: 'patrick hand'; font-size: 20px;}
+
+.saludo{
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
+}
+.dash{
+    font-family: 'patrick hand'; 
+    font-size: 30px;
+    text-align: center;
+    color: darkcyan;
+}
+.borrar{
+    background-color: crimson;
+    border: 1px solid crimson;
+}
+.editar{
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.5;
+
+}
+.editar:hover{
+    background-color: cadetblue;
+    color: #fff;
+    transition: all 0.5;
+
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'patrick hand'; 
+    font-size: 30px;
+}
+.containerForm{
+    width: 26%;
+    margin: 2% 37%;
+  
+
+
+}
+.formulario{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+    padding: 5%;
+}
+.formulario label{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.formulario input, .formulario textarea{
+    font-family: "Patrick Hand", cursive;
+    font-size: 19px;
+}
+.formulario select{height: 26px; font-family: "Patrick Hand", cursive; font-size: 19px;}
+.formulario option{font-family: "Patrick Hand", cursive; font-size: 19px;}
+.formulario button{margin-top: 3%;}
+.containerForm a{
+    margin: 3% 0;
+    font-family: "Patrick Hand";
+    font-size: 20px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 98%;
+}
+.botones .next.siguiente {
+margin-left: 90%;  }
+  
+.previous, .next{
+    font-family: "Patrick Hand", cursive;
+    font-size: 19px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2%;
+}
+.previous:hover, .next:hover{
+    border: 1px solid cadetblue;
+    background-color: cadetblue;
+    color: #fff;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: "Patrick Hand", cursive; 
+    font-size: 19px;
+    background-color: darkcyan;
+    margin-top: auto;
+}
+footer p{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+footer a img{
+    width: 25px;
+    margin-left: 12px;
+}
+.home{
+    height: 77.9vh;
+    background-image: url('./images/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1vw 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hometitulo{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2%;
+    font-family: "Patrick Hand", cursive; 
+    font-size: 19px;
+    box-shadow: 2px 2px 5px 2px;
+}
+.hometitulo a{
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+.hometitulo a:hover{
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    background-color: #fff;
+    color: darkcyan;
+}
+
+
+@media screen and (max-width: 970px){
+    .product-card{width: 30%;}
+}
+
+@media screen and (max-width: 780px){
+    .menu li a{font-size: 7px;}
+    nav button {font-size: 10px;}
+    .product-card{width: 100%;}
+    .product-card h2 {font-size: 20px }
+    .product-cardId{
+        flex-direction: column;
+        height: fit-content;
+        margin: 2%;
+        width: 96%;
+    }
+    .detalles{width: 100%;}
+    .detalles h2{font-size: 24px;}
+    .Divlogin, .error, .newUser, .containerForm{width: 90%; margin: 5%;}
+    .saludo{font-size: 24px;}
+    footer{font-size: 11px;}
+}
