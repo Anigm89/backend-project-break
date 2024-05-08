@@ -81,13 +81,14 @@ const ProductController = {
         const password = req.body.password;
         const isLoginOrSignup = req.body.isLoginOrSignup;
 
-        let user = req.body.email;                      
+        let user = '';                      
         try {
             if (isLoginOrSignup === 'isLogin') {
                 user = await loginUser(req, email, password);
                 req.session.user = user;
                 res.redirect('/dashboard');
             } else {
+                
                 const userRecord = await createUser(req, email, password);
                 const html = baseHtml() + getNavBar(req) + newUsu() + footer();
                 res.send(html);

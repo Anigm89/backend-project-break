@@ -350,6 +350,12 @@ footer a img{
     color: darkcyan;
 }
 
+.desactivado{
+    color: red;
+    font-size: 10px;
+    margin-top: -4%;
+    margin-left: 7%;
+}
 
 @media screen and (max-width: 970px){
     .product-card{width: 30%;}

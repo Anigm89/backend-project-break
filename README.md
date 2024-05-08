@@ -119,7 +119,6 @@ Por ejemplo:
 ## Despliegue
 
 Al terminar el proyecto lo subo a github y lo despliego en fl0.
-https://backend-project-break-dev-detr.2.ie-1.fl0.io/
 
 ##  Tests
 
@@ -130,15 +129,15 @@ Para poder comprobar que el controlador de productos funciona correctamente, he 
 
 Para que solo un usuario registrado pueda iniciar sesión y acceder a las rutas `/dashboard` he creado un login con email y contraseña con firebase. Para ello, he  instalado los paquetes `firebase`, `firebase-admin`, `axios` y `express-session` y configurar el proyecto en firebase auth. 
 
-el formulario del login aparece en /dashboard si no hay sessión activa, una vez completado, te redirige a /login donde verifica si es un nuevo registro o un inicio de sesión y esto lo verifica en el archivo authController.js
+El formulario del login aparece en /dashboard si no hay sesión activa, una vez completado, te redirige a /login donde verifica si es un nuevo registro o un inicio de sesión y esto lo verifica en el archivo authController.js
 Si es un nuevo registro, tras crear el nuevo usuario aparecerá un mensaje que te redirige al login para iniciar sesión.
-Si ya estás registrado, verifica que email y contraseña son correctas y te redirige de nuevo a dashboard, en este caso, tras iniciar sesión el /dasboard uestra todos los productos. En caso de que el email o contrseña sea incorrectas, muestra un mensaje y te redirige a  la home.
+Si ya estás registrado, verifica que email y contraseña son correctas y te redirige de nuevo a dashboard, en este caso, tras iniciar sesión el /dasboard muestra todos los productos. En caso de que el email o contraseña sea incorrectas, muestra un mensaje y te redirige a  la home.
 
 El archivo `middlewares/authMiddleware.js` contiene el middleware para comprobar si la sesión está activa, si no lo está, redirigirá a la home.
 
 ##  API y documentación con Swagger
 
-Para poder documentar con Swagger he creado los archivos docroutes,js y docProductController que continen las rutas y las funciones CRUD de la API y devuelve datos en formato JSON.
+Para poder documentar con Swagger he creado los archivos docroutes.js y docProductController que continen las rutas y las funciones CRUD de la API y devuelve datos en formato JSON.
 Para ver los resultados en formato JSON hay que poner `/api`, por ejemplo para ver todos los productos, la ruta sería /api/products
 
 ## Recursos utilizados

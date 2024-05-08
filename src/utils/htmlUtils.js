@@ -211,9 +211,10 @@ function formLogin(req){
               <label for="radioIsLogin">Entrar a mi cuenta</label>
             </div>
             <div class ="options">
-              <input type="radio" name="isLoginOrSignup" id="radioIsSignup" value="isSignup" />
+              <input type="radio" name="isLoginOrSignup" id="radioIsSignup" value="isSignup" disabled />
               <label for="radioIsSignup">Crear cuenta</label>
             </div>
+            <p class="desactivado">Se ha desactivado esta opción. Solo el admin puede acceder.</p>
             <button  type="submit" id="btnLogin">Acceder</button>
         </form>
       </div>
@@ -313,7 +314,7 @@ function newUsu(){
   return html;
 }
 function smserror(){
-  const html = '<div class="container"><div class="error"><p>ERROR! el email o la contraseña no son válidos</p>  <a href="/"> < Volver</a> </div></div>';
+  const html = '<div class="container"><div class="error"><p>Esta opción ha sido desactivada. No tienes permiso para acceder.</p>  <a href="/"> < Volver</a> </div></div>';
   return html;
 }
 function footer(){
